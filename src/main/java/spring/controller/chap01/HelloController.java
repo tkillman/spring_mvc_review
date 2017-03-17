@@ -1,4 +1,4 @@
-package spring.controller;
+package spring.controller.chap01;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -12,14 +12,11 @@ public class HelloController {
 		
 		ModelAndView mav = new ModelAndView();
 		
-		mav.setViewName("intro/viewName1");
-		
-		mav.addObject("greeting", "반갑습니다");
-		
+		mav.setViewName("chap01/viewName1");
+		mav.addObject("greeting", "oject 헬로우");
 		
 		
 		return mav;
-		
 	}
 	
 	

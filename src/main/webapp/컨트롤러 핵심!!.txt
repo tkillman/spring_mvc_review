@@ -1,0 +1,64 @@
+parameter값 저장
+1.컨트롤러 메서드 
+-> 파라미터 이름 == 프로퍼티명 
+자바빈 타입의 매개변수 선언
+
+2.컨트롤러 메서드의 매개변수명 
+==  파라미터 이름 
+
+3.@RequestParam() 매개변수 선언
+
+4.HttpServletRequest타입의 매개변수
+getParameter("파라미터명");
+
+view 명시
+
+컨트롤러 메서드 리턴타입 String or ModelAndView
+
+
+모델 
+
+컨트롤러 메서드의 파라미터
+1.커맨드 객체(자바빈)
+2.Map
+3.Model
+4.ModelMap
+5.@ModelAttribute
+
+컨트롤러 메서드의 리턴타입
+1.Map
+2.Model
+3.ModelAndView
+
+@ModelAttribute("name") 메서드
+=>메서드가 리턴한 객체 => model데이터
+
+
+Map - put(k,v)
+Model/ModelMap addAttribute(k,v)
+
+ModelAndView
+
+ModelAndView()
+setViewName("String viewName")
+addObject(k,v)
+addObject(k,v)
+
+ModelAndView(String viewName)
+addObject(k,v)
+
+ModelAndView(String viewName, Map<String,?> model)
+
+ModelAndView(String viewName, String modelName, Object modelObject)
+
+
+
+
+
+
+
+
+
+
+
+
