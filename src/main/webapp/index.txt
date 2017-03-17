@@ -22,7 +22,7 @@
 
 
 	
-5. parameter 값을 받는 방법을 정리해보자 chap03
+5. parameter 값을 받는 방법을 정리해보자 //chap03
 
 ㄱ) httpservletrequest로 받아와서 request.getparameter
 ㄴ) @RequestMapping이 걸린 메소드의 매개변수의 변수명과 parameter의 이름을 동일하게
@@ -43,7 +43,47 @@
 ㄴ) ModelAndView의 setViewName() 메소드
 ㄷ) ModelAndView("View 네임") 생성자의 매개변수로 지정	
 	
-8.	
+8. Restful서비스란? //chap04
+Representational state transfer	
+
+<servlet-mapping>
+<servlet-name>dispatcher</servlet-name>
+<url-pattern>*.do</url-pattern>
+<url-pattern>/game/*</url-pattern>
+</servlet-mapping>
+
+dispatcher의 url-pattern 설정 방법은 두 가지가 있다. 
+첫 번째는 확장자 기반 , 두 번째는 servlet 경로 기반
+
+두번째 servlet 경로 기반의 경우 
+내가 요청한 url을 http://host:port/contextpath/game/* 일 경우 인식은 하지만
+uri로 바꿀 때에 contextpath/game 까지 잘라버린다.
+따라서 
+dispatcher-servlet.xml에 설정을 지정해서
+<bean class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping">
+		<property name="alwaysUseFullPath" value="true" />
+	</bean>
+	<bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">
+		<property name="alwaysUseFullPath" value="true" />		
+	</bean>
+
+/game 부터 인식하겠다고 설정해야한다.
+
+그 다음 {템플릿변수} 템플릿변수를 선언해서@PathVariable 을 통해 변수명을 맞춰주어 받아온다.
+
+9. 예러 처리
+
+
+
+
+
+
+
+
+
+
+
+
 
 	
 	
