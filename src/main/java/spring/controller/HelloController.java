@@ -9,13 +9,17 @@ public class HelloController {
 
 	@RequestMapping("/hello.do")
 	public ModelAndView hello(){
+		
 		ModelAndView mav = new ModelAndView();
 		
 		mav.setViewName("intro/viewName1");
-		mav.addObject("greeting", "oject Å¸ÀÔ ¾È³çÇÏ¼¼¿ä");
+		
+		mav.addObject("greeting", "ë°˜ê°‘ìŠµë‹ˆë‹¤");
+		
 		
 		
 		return mav;
+		
 	}
 	
 	

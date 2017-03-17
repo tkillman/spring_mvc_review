@@ -1,0 +1,39 @@
+1.버전관리
+메이븐 웹 버전 올리기.txt 참조
+
+2.spring-mvc 패턴 설명 
+ㄱ)client, dispatcher servlet, handlermapping, controller, view resolver, view  
+ㄴ)spring_mvc.PNG 그림 참조
+
+3.spring-mvc의 가장 간단한 사용 예제 만들기
+
+ㄱ) pom.xml에 spring-mvc 추가
+ㄴ) web.xml에 dispatcher 추가
+ㄷ) dispatcher-servlet.xml(bean 관리)에서 	
+   InternalResourceViewResolver를 통한 viewResolver 구현 
+ㄹ) 요청을 처리할 class 파일들 설정 
+	@controller, @RequestMapping("/요청이름.do")
+	
+4. get 방식과 post 방식에 따라서 서로 다른 로직을 처리하도록 프로그래밍 해보자.
+@Controller와 @RequestMapping을 class에 걸고
+
+메소드 위에 @RequestMapping(method=RequestMethod.GET)
+	   @RequestMapping(method=RequestMethod.POST) 를 건다.
+
+	
+5. parameter값을 받아오는 방법은??
+
+1. 매개변수의 값과 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
