@@ -4,9 +4,9 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 
-<bean name="newArticleController" class="spring.controller.NewArticleController">
+<!-- chap02 예제 -->
+<bean name="newArticleController" class="spring.controller.chap02.NewArticleController">
 </bean>
-
 
 
 <bean name="viewResolvor" class="org.springframework.web.servlet.view.InternalResourceViewResolver">

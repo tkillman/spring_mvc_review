@@ -5,7 +5,7 @@
 ㄱ)client, dispatcher servlet, handlermapping, controller, view resolver, view  
 ㄴ)spring_mvc.PNG 그림 참조
 
-3.spring-mvc의 가장 간단한 사용 예제 만들기
+3.spring-mvc의 가장 간단한 사용 예제 만들기  // chap01
 
 ㄱ) pom.xml에 spring-mvc 추가
 ㄴ) web.xml에 dispatcher 추가
@@ -14,24 +14,36 @@
 ㄹ) 요청을 처리할 class 파일들 설정 
 	@controller, @RequestMapping("/요청이름.do")
 	
-4. get 방식과 post 방식에 따라서 서로 다른 로직을 처리하도록 프로그래밍 해보자.
+4. get 방식과 post 방식에 따라서 서로 다른 로직을 처리하도록 프로그래밍 해보자. // chap02
 @Controller와 @RequestMapping을 class에 걸고
 
 메소드 위에 @RequestMapping(method=RequestMethod.GET)
 	   @RequestMapping(method=RequestMethod.POST) 를 건다.
 
+
 	
+5. parameter 값을 받는 방법을 정리해보자 chap03
+
+ㄱ) httpservletrequest로 받아와서 request.getparameter
+ㄴ) @RequestMapping이 걸린 메소드의 매개변수의 변수명과 parameter의 이름을 동일하게
+ㄷ) @RequestMapping이 걸린 메소드의 매개변수의 @RequestParam("파라미터이름")을 건다.
+ㄹ) @RequestMapping이 걸린 메소드의 매개변수에 커멘트 객체를 주입->클래스 이름의 첫자가 소문자가 모델 이름으로 쓰인다.
+ㅁ)  @RequestMapping이 걸린 메소드의 매개변수에 @ModelAttribute("el태그에서 쓸 이름==모델 이름") 속성을 걸어
+  	모델 이름을 지정해 줄수도 있다.	
 	
+6. model에 세팅하는 방법
+ㄱ) @RequestMapping 이 걸린 리턴 타입이 ModelAndView, Model, ModelMap , Map , 커멘드 객체
+--> 메소드 안에서 생성해서 값을 세팅한 후 리턴
+
+ㄴ) 	@RequestMapping 메소드 매개변수가 Map, Model, ModelMap
+--> 매개변수명을 사용해서 값을 세팅만 하면 자동 리턴
+
+7.View 네임 지정	
+ㄱ) 리턴 타입 String
+ㄴ) ModelAndView의 setViewName() 메소드
+ㄷ) ModelAndView("View 네임") 생성자의 매개변수로 지정	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+8.	
+
 	
 	
