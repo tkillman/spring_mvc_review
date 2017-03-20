@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<form method="post">
+<form method="get">
 아이디 : <input type="hidden" name="parentId" value="10"><br>
 제목 :<input type="text" name="title"><br>
 내용 : <textarea name="context"></textarea><br>

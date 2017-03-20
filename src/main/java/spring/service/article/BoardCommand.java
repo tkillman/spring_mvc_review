@@ -1,7 +1,9 @@
-package spring.service;
+package spring.service.article;
 
-public class Dto {
-
+public class BoardCommand{
+ // command 는 파라미터를 받아오는 객체를 말한다.
+	
+	
 	private String parentId;
 	private String title;
 	private String context;
