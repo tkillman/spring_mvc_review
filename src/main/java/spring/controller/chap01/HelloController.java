@@ -14,14 +14,10 @@ public class HelloController {
 		
 		mav.setViewName("chap01/viewName1");
 		mav.addObject("greeting", "oject 헬로우");
-		
-		
-		return mav;
+			
+	return mav;
+	
 	}
-	
-	
-	
-	
 	
 }
 

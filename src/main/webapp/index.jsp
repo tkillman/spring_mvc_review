@@ -15,9 +15,10 @@ chap03<br>
 <a href="chap03/Paramters2.do">파라미터 정리(리스트 사용)</a><br>
 
 chap04<br>
-<a href="game/userId/tk">restFul 예제</a>
+<a href="game/userId/tk">restFul 예제</a><br>
 
-
+chap05<br>
+<a href="chap05/createForm.do">유효성 검사</a>
 
 
 
