@@ -13,14 +13,10 @@ public class HelloController {
 		
 		mav.setViewName("intro/viewName1");
 		mav.addObject("greeting", "oject 타입 안녕하세요");
-		
-		
+			
 		return mav;
+		
 	}
-	
-	
-	
-	
 	
 }
 
