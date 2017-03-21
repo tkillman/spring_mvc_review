@@ -3,6 +3,7 @@
 <%@ taglib uri="http://www.springframework.org/tags" prefix="spring"%>
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
     
+    
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -14,11 +15,11 @@
 <spring:hasBindErrors name="memberDto"/>
 <form:errors path="memberDto"/>
 <form method="post">
-아이디 : <input type="text" name="memberId" value="${memberDto.memberId}"><form:errors path="memberDto.memberId"/><br>
-패스워드 : <input type="text" name="password" value="${memberDto.password}"><form:errors path="memberDto.password"/>
+<form:errors element="div"/>
+아이디 : <input type="text" name="memberId"><form:errors path="memberDto.memberId"/><br>
+패스워드 : <input type="text" name="password"><form:errors path="memberDto.password"/><br>
 <input type="submit">
 </form>
-
 
 </body>
 </html>

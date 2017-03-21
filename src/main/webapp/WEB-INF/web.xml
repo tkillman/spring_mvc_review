@@ -12,7 +12,7 @@
 <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
 <init-param>
 <param-name>contextConfigLocation</param-name>
-<param-value>/WEB-INF/dispatcher-servlet.xml,/WEB-INF/getpost-servlet.xml</param-value>
+<param-value>/WEB-INF/dispatcher-servlet.xml,/WEB-INF/getpost-servlet.xml,/WEB-INF/config.xml</param-value>
 </init-param>
 </servlet>
 
