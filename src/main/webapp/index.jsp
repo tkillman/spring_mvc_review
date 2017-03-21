@@ -18,7 +18,7 @@ chap04<br>
 <a href="game/userId/tk">restFul 예제</a><br>
 
 chap05<br>
-<a href="chap05/createForm.do">유효성 검사</a>
+<a href="chap05/createForm.do">유효성 검사</a><br>
 
 
 

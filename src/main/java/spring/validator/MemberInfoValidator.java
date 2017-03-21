@@ -15,6 +15,17 @@ public class MemberInfoValidator implements Validator{
 
 	@Override
 	public void validate(Object arg0, Errors arg1) {
+		MemberDto dto = (MemberDto) arg0;
+		
+		if(dto.getMemberId() ==null || dto.getMemberId().trim().isEmpty()){
+			
+			arg1.rejectValue("memberId", "required");
+		}
+	
+		if(dto.getPassword()==null || dto.getPassword().trim().isEmpty()){
+			
+			arg1.rejectValue("password", "required");
+		}
 		
 		
 		
