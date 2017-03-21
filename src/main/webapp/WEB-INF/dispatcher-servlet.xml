@@ -9,14 +9,32 @@
 <!-- 컨트롤러로 지정된 것 자동으로 빈 설정 -->
 <context:component-scan base-package="spring.controller"></context:component-scan>
 
+<!--인터셉터 등록  -->
+<bean id="interceptor" class="spring.ExpireInterceptor.Interceptor" />
+
 <bean class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping">
 		<property name="alwaysUseFullPath" value="true" />
+		<property name="interceptors">
+		<list>
+		<ref bean="interceptor"/>
+		</list>
+		</property>
 	</bean>
 	<bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">
 		<property name="alwaysUseFullPath" value="true" />		
 	</bean>
 
 
+<!-- 유효성 검사를 위한 메세지번들 -->
+<bean id="messageSource"
+		class="org.springframework.context.support.ResourceBundleMessageSource">
+		<property name="basenames">
+			<list>
+				<value>messages.validation</value>
+				<!-- 추가할 메세지가 있으면 여기 추가해준다. -->
+			</list>
+		</property>
+	</bean>
 
 
 
@@ -26,5 +44,7 @@
 <property name="prefix" value="/WEB-INF/view/"></property>
 <property name="suffix" value=".jsp"></property>
 </bean>
+
+<bean name="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver"></bean>
 
 </beans>

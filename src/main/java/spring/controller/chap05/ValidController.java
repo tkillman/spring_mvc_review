@@ -2,12 +2,11 @@ package spring.controller.chap05;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import spring.service.chap05.MemberDto;
-import spring.validator.MemberInfoValidator;
+import spring.validator.chap05.MemberInfoValidator;
 
 @Controller
 @RequestMapping("/chap05/createForm.do")
@@ -29,8 +28,8 @@ public class ValidController {
 		if(result.hasErrors()){
 			
 			return "chap05/createForm";
+			
 		}
-		
 		
 		return "chap05/completion";
 	}
