@@ -9,9 +9,16 @@
 
 <bean name="tilesController" class="spring.controller.chap12.TilesController"></bean>
 
-
-
+<bean class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping">
+		<property name="alwaysUseFullPath" value="true" />
+	</bean>
+	<bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">
+		<property name="alwaysUseFullPath" value="true" />		
+	</bean>
+	
+	
 <!-- tile 뷰 Resolver -->
+
 <bean id="tilesviewResolver"
 		class="org.springframework.web.servlet.view.tiles3.TilesViewResolver" />
 	<bean id="tilesConfigurer"

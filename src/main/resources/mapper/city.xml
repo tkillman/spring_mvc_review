@@ -5,7 +5,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 
 <mapper namespace="city">
 
-<select id="sido" resultType="String">
+<select id="sido" resultType="string">
 
 select distinct area1 from zipcode order by area1 asc
 

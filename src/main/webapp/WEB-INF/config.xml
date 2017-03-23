@@ -5,14 +5,15 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
 
+
 <context:annotation-config></context:annotation-config>
 
 <context:property-placeholder location="classpath:db/db.properties"/>
 <bean name="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
-<property name="driverClass" value="${jdbc.driver}"></property>
-<property name="jdbcUrl" value="${jdbc.url}"></property>
-<property name="user" value="${jdbc.username}"></property>
-<property name="password" value="${jdbc.password}"></property>
+<property name="driverClass" value="oracle.jdbc.driver.OracleDriver"></property>
+<property name="jdbcUrl" value="jdbc:oracle:thin:@localhost:1521:XE"></property>
+<property name="user" value="cc"></property>
+<property name="password" value="1234"></property>
 </bean>
 
 
