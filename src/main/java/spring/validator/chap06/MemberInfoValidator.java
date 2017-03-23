@@ -4,7 +4,7 @@ import org.springframework.validation.Errors;
 import org.springframework.validation.ValidationUtils;
 import org.springframework.validation.Validator;
 
-import spring.service.chap06.MemberDto;
+import spring.command.chap06.MemberDto;
 
 public class MemberInfoValidator implements Validator {
 

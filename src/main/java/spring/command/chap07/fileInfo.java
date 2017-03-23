@@ -1,4 +1,4 @@
-package spring.service.chap07;
+package spring.command.chap07;
 
 public class fileInfo {
 

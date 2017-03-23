@@ -5,7 +5,7 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import spring.service.chap05.MemberDto;
+import spring.command.chap05.MemberDto;
 import spring.validator.chap05.MemberInfoValidator;
 
 @Controller

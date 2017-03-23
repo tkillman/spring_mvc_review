@@ -1,4 +1,4 @@
-package spring.service.chap06;
+package spring.command.chap05;
 
 public class MemberDto {
 

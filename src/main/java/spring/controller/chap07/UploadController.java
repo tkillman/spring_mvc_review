@@ -12,8 +12,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.multipart.MultipartHttpServletRequest;
 
+import spring.command.chap07.fileInfo;
 import spring.service.chap07.fileDao;
-import spring.service.chap07.fileInfo;
 
 @Controller
 @RequestMapping("/chap07/uploadForm.do")
@@ -89,25 +89,7 @@ public class UploadController {
 			
 		}
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 		return "chap07/completion";
 	}
-	
-	
-	
-	
-	
 	
 }

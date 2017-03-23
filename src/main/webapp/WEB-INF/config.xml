@@ -5,6 +5,8 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
 
+<context:annotation-config></context:annotation-config>
+
 <context:property-placeholder location="classpath:db/db.properties"/>
 <bean name="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
 <property name="driverClass" value="${jdbc.driver}"></property>
@@ -23,5 +25,8 @@
 <property name="sqlSessionFactory" ref="sqlSessionFactory"></property>
 </bean>
 
+<bean name="service" class="spring.service.chap11.SidoService">
+<property name="sqlSessionFactory" ref="sqlSessionFactory"></property>
+</bean>
 
 </beans>

@@ -2,6 +2,8 @@ package spring.service.chap07;
 
 import org.mybatis.spring.support.SqlSessionDaoSupport;
 
+import spring.command.chap07.fileInfo;
+
 public class fileDao extends SqlSessionDaoSupport{
 
 	

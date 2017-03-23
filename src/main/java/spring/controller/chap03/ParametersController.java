@@ -4,10 +4,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
 
-import spring.service.chap03.ParamCommand;
-import spring.service.chap03.item;
+import spring.command.chap03.ParamCommand;
 
 @Controller
 @RequestMapping("/chap03/Paramters.do")

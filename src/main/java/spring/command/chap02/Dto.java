@@ -1,4 +1,4 @@
-package spring.service.chap02;
+package spring.command.chap02;
 
 public class Dto {
 

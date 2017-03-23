@@ -3,7 +3,7 @@ package spring.validator.chap05;
 import org.springframework.validation.Errors;
 import org.springframework.validation.Validator;
 
-import spring.service.chap05.MemberDto;
+import spring.command.chap05.MemberDto;
 
 public class MemberInfoValidator implements Validator{
 

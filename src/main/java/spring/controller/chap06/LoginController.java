@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import spring.service.chap06.MemberDto;
+import spring.command.chap06.MemberDto;
 import spring.validator.chap06.MemberInfoValidator;
 
 @Controller

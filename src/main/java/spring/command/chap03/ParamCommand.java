@@ -1,4 +1,4 @@
-package spring.service.chap03;
+package spring.command.chap03;
 
 import java.util.List;
 

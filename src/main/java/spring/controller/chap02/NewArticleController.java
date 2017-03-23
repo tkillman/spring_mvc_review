@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import spring.service.chap02.Dto;
+import spring.command.chap02.Dto;
 
 @Controller
 @RequestMapping("/chap02/newArticle.getpost")
