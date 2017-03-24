@@ -8,9 +8,11 @@ public class SidoService extends SqlSessionDaoSupport{
 
 	public List<String> sidoList(){
 		
+		System.out.println("in");
 		List<String> sidoList = getSqlSession().selectList("city.sido");
-		
+		System.out.println(sidoList.toString());
 		return sidoList;
+		
 	}
 	
 	

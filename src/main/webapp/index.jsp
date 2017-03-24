@@ -45,9 +45,5 @@ char12<br>
 
 
 
-
-
-
-
 </body>
 </html>

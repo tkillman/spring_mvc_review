@@ -22,17 +22,17 @@ public class CityController {
 		this.service = service;
 	}
 
-	@RequestMapping("/chap11/city.do")
+	@RequestMapping(value= "/chap11/city.do", method = RequestMethod.GET, produces="text/plain;charset=UTF-8")
 	public String form(HttpServletResponse resp){
-		resp.setContentType("text/html;charset=utf-8");
+		resp.setContentType("text/html;charset=UTF-8");
 		return "chap11/city";
 	}
 	
-	@RequestMapping(value= "/chap11/sidoList.do", method = RequestMethod.POST)
+	@RequestMapping(value= "/chap11/sidoList.do", method = RequestMethod.POST, produces="text/plain;charset=UTF-8")
 	@ResponseBody
 	public String sidoList(HttpServletResponse resp){
-		
-		resp.setContentType("text/html;charset=utf-8");
+		System.out.println("sidoList()");
+		resp.setContentType("text/html;charset=UTF-8");
 		JSONObject jso = new JSONObject();
 		List<String> sidoList = service.sidoList();
 		jso.put("data", sidoList);
