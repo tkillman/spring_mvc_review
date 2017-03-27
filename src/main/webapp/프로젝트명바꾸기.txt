@@ -1,0 +1,5 @@
+1)pom.xml에서 프로젝트명 바꾼다.
+
+2).project 파일에서 프로젝트명 바꾼다.
+
+3) 프로젝트 우클릭 properties에서  Web project setting에서 이름을 바꾼다.
