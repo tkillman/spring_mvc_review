@@ -9,6 +9,8 @@
 <context:annotation-config></context:annotation-config>
 
 <context:property-placeholder location="classpath:db/db.properties"/>
+
+<!-- dataSource -->
 <bean name="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
 <property name="driverClass" value="oracle.jdbc.driver.OracleDriver"></property>
 <property name="jdbcUrl" value="jdbc:oracle:thin:@localhost:1521:XE"></property>
@@ -17,11 +19,15 @@
 </bean>
 
 
+<!-- sqlSessionFactory -->
 <bean name="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
 <property name="dataSource" ref="dataSource"></property>
 <property name="mapperLocations" value="classpath:mapper/*.xml"></property>
 </bean>
 
+
+
+<!-- Dao -->
 <bean name="fileDao" class="spring.service.chap07.fileDao">
 <property name="sqlSessionFactory" ref="sqlSessionFactory"></property>
 </bean>

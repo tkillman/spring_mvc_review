@@ -164,6 +164,8 @@ MultipartFile ÀÎÅÍÆäÀÌ½º·Î ¹Ş°í ±¸Çö °´Ã¼·Î transforTo ¸Ş¼Òµå¸¦ »ç¿ëÇØ local ÄÄÇ
 
 13. ¾÷·Îµå µÈ ÆÄÀÏÀ» µğºñ¿¡ ÀúÀå½ÃÄÑº¸ÀÚ.
 
+!!!!ÁÖÀÇ ojdbc´Â Áö¿øÀ» ¾ÈÇØÁÖ¹Ç·Î ¸ÕÀú WEB-INF/libÆÄÀÏ¿¡ ³Ö¾îÁÖµµ·Ï ÇÏÀÚ.
+
 ¤¡) pom.xml¿¡ mybatis,mabatis-spring,spring-orm,c3p0 µî·Ï
 ¤¤)  web.xml¿¡ »õ·Î¿î xmlÆÄÀÏÀ» ¸¸µé¾î¼­ µî·Ï
 ¤§) »õ·Î¿î xml¿¡¼­ dataSource¿Í sqlSessionFactoryBean °´Ã¼¸¦ »ı¼º
