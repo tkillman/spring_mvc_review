@@ -40,10 +40,12 @@ chap10<br>
 chap11<br>
 <a href="chap11/city.do">json 활용하기</a><br>
 
-char12<br>
-<a href="tiles/login/login.do">타일 사용</a>
+chap12<br>
+<a href="tiles/login/login.do">타일 사용</a><br>
 
 
+chap13<br>
+<a href="download/gogo.down">다운로드</a>
 
 </body>
 </html>

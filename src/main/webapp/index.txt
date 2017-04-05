@@ -136,7 +136,7 @@ validate 메소드를 재정의하는데 ValidationUtils 클래스를 쓴다.
 ㄹ) 나머지는 위의 ㄷ부터 동일
 
 
-11. @initBinder의 또다른 기능은?
+11. @initBinder의 또다른 기능은? QueryLogController
 
 paratemer의 값은 항상 String인데 이를 자동 타입변환이 가능하도록 해준다.
 
@@ -189,7 +189,8 @@ void afterHandle()
 메소드를 재정의하는데 preHandle의 경우 return 값이 false일 경우 원래 요청을 수행하지 않는다.
 true 일 경우 원래 요청 수행
 
-15. 예외처리를 해보자 
+
+15. 예외처리를 해보자   //spring_mvc 프로젝트의 dispatcher-servlet을 살펴보자.
 
 SimpleMappingExceptionResolver를 bean 등록 후
 property = "exceptionMappings" 에 <props>
@@ -245,5 +246,6 @@ jsp 페이지에서
 
 25.tiles 사용 예제
 
+26. locale 사용
 
 
