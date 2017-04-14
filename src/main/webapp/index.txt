@@ -158,8 +158,14 @@ webDataBinder 객체의 registerCustomEditor메소드를 통해서
 <bean name="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver"></bean>
 등록해준다.	
 
-ㄷ) @RequestMapping이 걸린 메소드의 파라미터 인자로
+ㄷ) @RequestMapping이 걸린 메소드의 파라미터 인자로 
 MultipartFile 인터페이스로 받고 구현 객체로 transforTo 메소드를 사용해 local 컴퓨터에 저장 
+
+
+// 커멘드 객체에 private MultipartFile report;를 선언해서 받을 수도 있다
+
+
+
 
 
 13. 업로드 된 파일을 디비에 저장시켜보자.
@@ -191,7 +197,8 @@ void afterHandle()
 메소드를 재정의하는데 preHandle의 경우 return 값이 false일 경우 원래 요청을 수행하지 않는다.
 true 일 경우 원래 요청 수행
 
-15. 예외처리를 해보자 
+
+15. 예외처리를 해보자   //spring_mvc 프로젝트의 dispatcher-servlet을 살펴보자.
 
 SimpleMappingExceptionResolver를 bean 등록 후
 property = "exceptionMappings" 에 <props>
@@ -217,6 +224,12 @@ Printwriter out = response.getWriter()
 out.print(jso.toString())
 
 또는 메소드에 @ResponseBody를 걸고 return jso.toString()
+
+
+
+
+
+
 
 18. <spring:message> 사용하기 //chap09
 pom.xml에서 jstl jar 파일 설정 
@@ -247,5 +260,6 @@ jsp 페이지에서
 
 25.tiles 사용 예제
 
+26. locale 사용
 
 
