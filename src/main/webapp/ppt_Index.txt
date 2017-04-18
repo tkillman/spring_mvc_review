@@ -43,6 +43,8 @@ Advice, joinpoint, Pointcut, target-object, aspect
 
 134쪽 spring-mvc 패턴
 
+
+149쪽 컨트롤러 메서드의 파라미터 타입
 150쪽  컨트롤러 메서드의 리턴 타입
 
 156쪽 모델 생성
