@@ -182,6 +182,27 @@ MultipartFile ÀÎÅÍÆäÀÌ½º·Î ¹Ş°í ±¸Çö °´Ã¼·Î transforTo ¸Ş¼Òµå¸¦ »ç¿ëÇØ local ÄÄÇ
 ¤·) mapper¿¡¼­ °¢ ¸Ş¼ÒµåÀÇ sql¹®À» ÀÛ¼º
 ¤µ) controller¿¡¼­ dao °´Ã¼¸¦ ÁÖÀÔ¹Ş¾Æ¼­ dao ¸Ş¼Òµå ¼öÇà 
 
+14. ÆÄÀÏ ´Ù¿î·Îµå¸¦ ÇØº¸ÀÚ. chap13
+
+¤¡) ApplicationContextAware ±¸ÇöÇÑ ÄÁÆ®·Ñ·¯¸¦ ¸¸µç´Ù.
+¤¤) setApplicationContext ¸Ş¼Òµå ÀçÁ¤ÀÇ
+¤§) ¸Ş¼Òµå·ÎºÎÅÍ ¾òÀº context·Î ÆÄÀÏ °æ·Î¸¦ ¾ò°í ÀÌ ÆÄÀÏ °æ·Î·Î ÆÄÀÏ °´Ã¼¸¦ ¸¸µç´Ù.
+¤©) ModelandView(ºä³×ÀÓ,¸ğµ¨ÀÌ¸§,¸ğµ¨ °´Ã¼)
+¤±) <!-- BeanNameViewResolver --> ¸¦ µî·ÏÇØÁØ´Ù.
+		<bean id="viewResolver"
+			class="org.springframework.web.servlet.view.BeanNameViewResolver" />
+
+¤²) <!-- Ã£¾Æ°¥ ºä °´Ã¼µé -->
+	<bean id="download" class="spring.view.DownloadView" />
+¤·) AbstractView	¸¦ »ó¼Ó¹ŞÀº Å¬·¡½º¸¦ Á¤ÀÇÇÏ°í
+¤µ) renderMergedOutputModel À» ÀçÁ¤ÀÇÇÏ´Âµ¥ ÀÌ ¶§ Àü´Ş¹ŞÀº ¸ğµ¨ÀÇ ÆÄÀÏ °´Ã¼¿¡ ÀÎÇ²½ºÆ®¸²À» ¿¬°á
+   HttpResponse¿¡ ¾Æ¿ôÇ² ½ºÆ®¸²À» ¿¬°áÇØ¼­ º¸³»ÁØ´Ù.
+
+
+
+
+
+
 14. ÀÎÅÍ¼ÁÅÍ¸¦ µî·ÏÇØº¸ÀÚ chap08
 
 ¤¡) dispatcher-servlet.xml¿¡
@@ -196,6 +217,13 @@ void afterHandle()
 
 ¸Ş¼Òµå¸¦ ÀçÁ¤ÀÇÇÏ´Âµ¥ preHandleÀÇ °æ¿ì return °ªÀÌ falseÀÏ °æ¿ì ¿ø·¡ ¿äÃ»À» ¼öÇàÇÏÁö ¾Ê´Â´Ù.
 true ÀÏ °æ¿ì ¿ø·¡ ¿äÃ» ¼öÇà
+
+
+
+
+
+
+
 
 
 15. ¿¹¿ÜÃ³¸®¸¦ ÇØº¸ÀÚ   //spring_mvc ÇÁ·ÎÁ§Æ®ÀÇ dispatcher-servletÀ» »ìÆìº¸ÀÚ.
